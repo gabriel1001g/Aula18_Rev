@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <!--Procedimento sem parametro-->
+    <input type="button" value="Clique aqui" onclick="mostrarAlerta()">
+
+    <!--Procedimento com parametro-->
+    <input type="button" value="Clique aqui2" onclick="mostrarAlerta1('Jo')">
+    <!--Função com parametro-->
+    <label>Digite o primeiro numero: </label>
+    <input type="number" id="idN1">
+    <label>Digite o Segundo numero: </label>
+    <input type="number" id="idN2">
+ 
+    <input type="button" value="Clique aqui" onclick='idResultado.value= soma(idN1.value, idN2.value)'><br>
+    <label >Resutlado: </label>
+    <input type="number"  id="idResultado">
+    <!--Função sem parâmetro-->
+    <label >Valor: </label>
+    <input type="number" id="idN">    
+    <input type="button" value="Clique aqui" onclick='dobro()'> 
+    <label>Resultado: </label>
+    <lebel id="idResult"><br><br><br>
+
+    <!--Função calculadora-->
+    <label> Diginte N1: </label>
+    <Input type="text" id="idN11"><br>
+    <label> Diginte N2: </label>
+    <Input type="text" id="idN22"><br>
+    <label> Resposta: </label><br>
+    <label id="idResposta"></label><br>
+    <input type="button"value="+" onclick="calculadora(this.value)">
+    <input type="button"value="-" onclick="calculadora(this.value)">
+    <input type="button"value="*" onclick="calculadora(this.value)">
+    <input type="button"value="/" onclick="calculadora(this.value)">
+       
+   
+    
+</body>
+</html>
